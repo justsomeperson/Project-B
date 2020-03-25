@@ -1,0 +1,11 @@
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.exe
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.deps.json
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.runtimeconfig.json
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.runtimeconfig.dev.json
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.dll
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\bin\Debug\netcoreapp3.1\TafelReservering.pdb
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\obj\Debug\netcoreapp3.1\TafelReservering.csprojAssemblyReference.cache
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\obj\Debug\netcoreapp3.1\TafelReservering.AssemblyInfoInputs.cache
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\obj\Debug\netcoreapp3.1\TafelReservering.AssemblyInfo.cs
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\obj\Debug\netcoreapp3.1\TafelReservering.dll
+C:\Users\rahib\source\repos\TafelReservering\TafelReservering\obj\Debug\netcoreapp3.1\TafelReservering.pdb
