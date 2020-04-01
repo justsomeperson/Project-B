@@ -5,7 +5,7 @@ public class Class1
     public Class1()
     {
         // Beschikbare tafels voor 4 personen
-        var VierPersonen = new Tuple<string, string, int>[] {
+        var vierpers = new Tuple<string, string, int>[] {
                 Tuple.Create("Tafel 1", "Vrij", 4),
                 Tuple.Create("Tafel 2", "Vrij", 4),
                 Tuple.Create("Tafel 3", "Vrij", 4),
@@ -18,7 +18,7 @@ public class Class1
                 Tuple.Create("Tafel 10", "Vrij", 4)
         };
         // Beschikbare tafels voor 2 personen
-        var TweePersonen = new Tuple<string, string, int>[] {
+        var tweepers = new Tuple<string, string, int>[] {
                 Tuple.Create("Tafel 11", "Vrij", 2),
                 Tuple.Create("Tafel 12", "Vrij", 2),
                 Tuple.Create("Tafel 13", "Vrij", 2),
@@ -37,21 +37,21 @@ public class Class1
 
         Console.WriteLine("{0} is geselecteerd. Wilt u deze reserveren?", input);
 
-        string input2 = Console.ReadLine().ToUpper();
+        string input2 = Console.ReadLine();
 
-        if (input2 == "Ja")
+        if (input2 == "ja")
         {
             Console.WriteLine("{0} is gereseveerd!", input);
         }
         else
         {
             Console.WriteLine("Jammer! Kies een andere tafel:");
-            while (input2 != "Ja")
+            while (input2 != "ja")
             {
                 string input3 = Console.ReadLine();
                 Console.WriteLine("{0} is geselecteerd. Wilt u deze reserveren?", input3);
                 input2 = Console.ReadLine();
-                if (input2 == "Ja")
+                if (input2 == "ja")
                 {
                     Console.WriteLine("{0} is gereseveerd!", input3);
                 }
