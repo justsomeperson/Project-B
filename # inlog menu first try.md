@@ -1,4 +1,4 @@
-# inlog menu first try 
+# inlog menu seconde try 
 using System;
 
 namespace Test_1
@@ -8,29 +8,30 @@ namespace Test_1
         static void Main(string[] args)
         {
             ConsoleKeyInfo key;
-            int logingAtempts = 0 ;
-            var choice = "";
-            string pass = "";
-            var userId = "";
-            string userName = "";
-            string userPassworde = "";
-            Console.WriteLine(" login = 1  regestire = 2     Exet = 0");
-            choice = Console.ReadLine();
-            while (choice != "0")
+            int inloggenpoging = 0 ;
+            var scherm = true;
+            string wachtwoord = "";
+            var gebruikersId = "";
+            string gebruikersNaam = "";
+            string gebruikersWachtwoord = "";
+            string schermKeuze = "";
+            Console.WriteLine(" voor inloggen toets (1) voor het account maken toets (2) ");
+            schermKeuze = Console.ReadLine();
+            while (scherm)
             {
-                if (choice == "1")
+                if (schermKeuze == "1")
                 {
                     for (int i = 0; i < 3; i++)
                     {
-                        Console.WriteLine("Enter your username");
-                        userId = Console.ReadLine();
-                        Console.WriteLine("Enter your passowerd");
+                        Console.WriteLine("Voer uw gebruikersnaam in");
+                        gebruikersId = Console.ReadLine();
+                        Console.WriteLine("Voer uw wachtwoord in");
                         do
                         {
                             key = Console.ReadKey(true);
                             if (key.Key != ConsoleKey.Backspace)
                             {
-                                pass += key.KeyChar;
+                                wachtwoord += key.KeyChar;
                                 Console.Write("*");
 
                             }
@@ -38,38 +39,39 @@ namespace Test_1
 
                         } while (key.Key != ConsoleKey.Enter);
                         Console.WriteLine();
-                        if (userId == userName || pass == userPassworde)
+                        if (gebruikersId == gebruikersNaam || wachtwoord == gebruikersWachtwoord)
                         {
-                            Console.WriteLine("welcome " + userName);
-                            choice = "0";
+                            Console.WriteLine("welcome " + gebruikersNaam);
+                            scherm = false;
                             break;
 
                         }
                         else
                         {
-                            Console.WriteLine("invalid passworde or username");
-                            logingAtempts++;
+                            Console.WriteLine("invalid wachtwoordword or gebruikersNaam");
+                            inloggenpoging++;
                         }
                     }
-                    if (logingAtempts > 2)
+                    if (inloggenpoging > 2)
                     {
                         Console.WriteLine("login failure");
                     }
 
                 }
-                else if (choice == "2") { 
-                    Console.WriteLine("First Name: ");
+                else if (schermKeuze == "2") { 
+
+                    Console.WriteLine("Voer uw voornaam in \n Voornaam: ");
                     Console.ReadLine();
-                Console.WriteLine("last Name: ");
+                Console.WriteLine(" Voer uw achter naam in \n Achternaam: ");
                 Console.ReadLine();
-                Console.WriteLine("Birth Date: ");
+                Console.WriteLine("Voer uw geboortedatum in \n Geboortedatum: ");
                 Console.ReadLine();
-                Console.WriteLine("user name: ");
-                userName = Console.ReadLine();
-                Console.WriteLine("New passowerd");
-                userPassworde = Console.ReadLine();
-                    Console.WriteLine("your acount is seccesfuly made");
-                    choice = "1";
+                Console.WriteLine("voer uw gebruikersnaam in \n Gebruikersnaam: ");
+                gebruikersNaam = Console.ReadLine();
+                Console.WriteLine("Voer uw wachtwoord in \n Wachtwoord:");
+                gebruikersWachtwoord = Console.ReadLine();
+                    Console.WriteLine("uw account is  gemaakt");
+                    schermKeuze = "1";
                 }
 
             }
