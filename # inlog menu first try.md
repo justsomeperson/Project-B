@@ -1,4 +1,4 @@
-# inlog menu seconde try 
+# inlog menu 3 try 
 using System;
 
 namespace Test_1
@@ -13,13 +13,15 @@ namespace Test_1
             string wachtwoord = "";
             var gebruikersId = "";
             string gebruikersNaam = "";
+            string adminGebruikersNaam = "admin@restaurant";
+            string adminWachtwoord = "1234";
             string gebruikersWachtwoord = "";
             string schermKeuze = "";
-            Console.WriteLine(" voor inloggen toets (1) voor het account maken toets (2) ");
+            Console.WriteLine(" voor inloggen als een klant toets (1) voor het inloggen als een admin toets (2) voor het account maken toets (3)  ");
             schermKeuze = Console.ReadLine();
             while (scherm)
             {
-                if (schermKeuze == "1")
+                if (schermKeuze == "1" || schermKeuze == "2")
                 {
                     for (int i = 0; i < 3; i++)
                     {
@@ -45,6 +47,12 @@ namespace Test_1
                             scherm = false;
                             break;
 
+                        }else if (adminGebruikersNaam == gebruikersId || adminWachtwoord == wachtwoord)
+                        {
+                            Console.WriteLine("welcome " + adminGebruikersNaam + " u bent ingelogd als administrator");
+                            scherm = false;
+                            break;
+
                         }
                         else
                         {
@@ -58,7 +66,7 @@ namespace Test_1
                     }
 
                 }
-                else if (schermKeuze == "2") { 
+                else if (schermKeuze == "3") { 
 
                     Console.WriteLine("Voer uw voornaam in \n Voornaam: ");
                     Console.ReadLine();
